@@ -15,7 +15,7 @@
 
 - 本项目用到了以下软件包：
   - [WiringNP](https://github.com/friendlyarm/WiringNP) This is a GPIO access library for NanoPi. It is based on the WiringOP for Orange PI which is based on original WiringPi for Raspberry Pi.
-  - [Mjpg-streamer](https://github.com/jacksonliam/mjpg-streamer) 是一个命令行应用程序，可将JPEG帧从一个或多个输入插件复制到多个输出插件，从一个UVC内核摄像头读取内容，然后将它推送到本地的端口上。
+  - [Gstreamer](https://gstreamer.freedesktop.org/) gstreamer跟ffmpeg一样，也是一个媒体框架，可以实现采集，编码，解码，渲染，滤镜等一条龙的媒体解决方案。。
   - [EasyLogger](https://github.com/armink/EasyLogger) 是一款超轻量级(ROM<1.6K, RAM<0.3K)、高性能的 C/C++ 日志库。
 
 # 2. 使用
@@ -59,7 +59,7 @@ $ sudo npi-config
 当修改了lib库中文件，需要进行重新编译时，进行编译选择：
 - 1.WiringNP
 - 2.easylogger
-- 3.mjpg-streamer
+- 3.Gstreamer
 
 启动 `compile.sh` 脚本，输入对应库的编号，进行自动化编译，并自动拷贝相关库
 ```shell
